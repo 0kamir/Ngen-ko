@@ -22,8 +22,12 @@
 // Relés. Evitamos pines de arranque (0, 2, 5, 12, 15).
 const uint8_t RELAY_PINS[NUM_ZONES] = {26, 27, 25, 33};
 
-// La mayoría de los módulos de relés chinos se activan con LOW.
+// Módulo de relés (protoboard): se activa con LOW.
+// PCB Ngen-ko 2.0 (transistor BC337): se activa con HIGH; el entorno
+// "pcb" de platformio.ini lo define como false.
+#ifndef RELAY_ACTIVE_LOW
 #define RELAY_ACTIVE_LOW true
+#endif
 
 // Sensores de humedad: SOLO pines ADC1 (ADC2 no funciona con WiFi activo).
 const uint8_t SENSOR_PINS[NUM_ZONES] = {36, 39, 34, 35};

@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ngen-ko")(type "KiCad")(uri "${KIPRJMOD}/ngen-ko.pretty")(options "")(descr "Huellas propias de Ngen-ko"))
+)
