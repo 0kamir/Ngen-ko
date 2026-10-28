@@ -26,7 +26,8 @@ Requiere [PlatformIO](https://platformio.org/) (`sudo pacman -S platformio-core`
 
 ```bash
 cd firmware
-pio run -t upload        # compila y sube por USB
+pio run -t upload        # protoboard con módulo de relés
+pio run -e pcb -t upload # placa Ngen-ko 2.0 (ver ../hardware)
 pio device monitor       # ver las lecturas por consola (115200)
 ```
 

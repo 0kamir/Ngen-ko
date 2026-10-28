@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "ngen-ko")(type "KiCad")(uri "${KIPRJMOD}/ngen-ko.kicad_sym")(options "")(descr "Símbolos propios de Ngen-ko"))
+)

@@ -63,7 +63,7 @@ Así además queda aislado eléctricamente el lado de las bobinas.
 
 Si tu módulo no tiene ese puente y no apaga bien, avísame y lo resolvemos con un transistor por canal. Así quedará en la PCB de la fase 2 de todas formas.
 
-Si algún día usas un módulo que se activa con HIGH, cambia `RELAY_ACTIVE_LOW` a `false` en `src/config.h`.
+Con la placa Ngen-ko 2.0 (carpeta `hardware/`) los relés se activan con HIGH: compila con `pio run -e pcb`, que define `RELAY_ACTIVE_LOW=false`.
 
 ### 2. Sensores capacitivos
 - Aliméntalos a **3.3 V**, no a 5 V. A 5 V su salida puede superar lo que acepta el ESP32.
